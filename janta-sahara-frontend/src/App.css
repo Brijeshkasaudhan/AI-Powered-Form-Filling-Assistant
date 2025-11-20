@@ -1,0 +1,58 @@
+.about-page {
+  min-height: 100vh;
+  background: #0e1117;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  background: rgba(22, 26, 37, 0.96);
+  border-radius: 16px;
+  padding: 48px 32px;
+  max-width: 700px;
+  box-shadow: 0 8px 32px rgba(19, 136, 8, 0.09);
+  margin: 40px 0;
+}
+
+.about-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #ff9933;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about-subheading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 28px 0 14px;
+  color: #67e6dc;
+}
+
+.about-list {
+  font-size: 1.08rem;
+  margin: 0 0 30px 0;
+  padding-left: 22px;
+}
+
+.about-list li {
+  margin-bottom: 7px;
+  line-height: 1.7;
+}
+
+.about-developer {
+  text-align: center;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  margin-top: 18px;
+}

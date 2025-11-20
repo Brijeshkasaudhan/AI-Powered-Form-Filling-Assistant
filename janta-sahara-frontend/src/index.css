@@ -1,0 +1,83 @@
+/* Import Variables */
+/* Color Variables */
+:root {
+  --saffron: #FF9933;
+  --white: #FFFFFF;
+  --green: #138808;
+  --primary-purple: #667eea;
+  --primary-blue: #4c51bf;
+  --accent-cyan: #00d9ff;
+  --glow-saffron: rgba(255, 153, 51, 0.6);
+  --glow-green: rgba(19, 136, 8, 0.6);
+  --glow-purple: rgba(102, 126, 234, 0.6);
+  --light-bg: #f5f7fa;
+  --light-text: #1a202c;
+  --dark-bg: #0f0f23;
+  --dark-text: #e2e8f0;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+}
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light-bg);
+  color: var(--light-text);
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--saffron), var(--green));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--primary-purple), var(--accent-cyan));
+}
+
+/* Selection Color */
+::selection {
+  background: var(--saffron);
+  color: white;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}

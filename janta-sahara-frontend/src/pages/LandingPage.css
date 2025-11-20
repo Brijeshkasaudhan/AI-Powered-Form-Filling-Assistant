@@ -1,0 +1,84 @@
+:root {
+  --primary-glow: #ff9933;
+  --secondary-glow: #667eea;
+  --dark-bg: #000000;
+  --dark-text: #e2e8f0;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --green: #138808;
+}
+
+.landing-page {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 2;
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.glow-text {
+  color: var(--dark-text);
+  background: linear-gradient(90deg, #ff9933, #e2e8f0, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 10s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 153, 51, 0.4),
+               0 0 20px rgba(255, 255, 255, 0.2),
+               0 0 30px rgba(19, 136, 8, 0.3);
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  color: #e2e8f0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: #a0aec0;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+  color: #a0aec0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}

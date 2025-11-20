@@ -1,0 +1,75 @@
+.start-form-page {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #080812 60%, #181825 100%);
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+}
+
+.start-form-container {
+  background: rgba(22, 26, 37, 0.98);
+  border-radius: 20px;
+  padding: 50px 38px;
+  max-width: 660px;
+  width: 100%;
+  box-shadow: 0 0 45px 0 rgba(19, 136, 8, 0.20), 0 0 90px 0 rgba(103, 230, 220, 0.10);
+  margin: 60px auto;
+}
+
+.start-form-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 36px;
+  color: #ff9933;
+  text-shadow: 0 0 16px #67e6dc30;
+  text-align: center;
+}
+
+.form-select-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.form-card {
+  background: rgba(35, 41, 55, 0.98);
+  border-radius: 13px;
+  padding: 27px 20px;
+  box-shadow: 0 0 20px 2px #13880830;
+  width: 270px;
+  transition: box-shadow 0.2s;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-card h2 {
+  color: #67e6dc;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.form-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.form-btn {
+  background: linear-gradient(90deg, #138808 70%, #67e6dc 100%);
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 15px #67e6dc20;
+}
+
+.form-btn:hover {
+  background: linear-gradient(90deg, #0f6b05 70%, #409ca1 100%);
+}

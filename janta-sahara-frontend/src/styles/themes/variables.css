@@ -1,0 +1,42 @@
+/* Color Variables for Janta Sahara */
+:root {
+  /* Indian Flag Colors */
+  --saffron: #FF9933;
+  --white: #FFFFFF;
+  --green: #138808;
+  --navy-blue: #000080;
+
+  /* Light Theme */
+  --light-bg: #f5f7fa;
+  --light-text: #1a202c;
+  --light-card: rgba(255, 255, 255, 0.9);
+  
+  /* Dark Theme */
+  --dark-bg: #0f0f23;
+  --dark-text: #e2e8f0;
+  --dark-card: rgba(26, 32, 44, 0.8);
+  
+  /* Futuristic Colors */
+  --primary-purple: #667eea;
+  --primary-blue: #4c51bf;
+  --accent-pink: #ed64a6;
+  --accent-cyan: #00d9ff;
+  
+  /* Glow Effects */
+  --glow-saffron: rgba(255, 153, 51, 0.6);
+  --glow-green: rgba(19, 136, 8, 0.6);
+  --glow-purple: rgba(102, 126, 234, 0.6);
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+}

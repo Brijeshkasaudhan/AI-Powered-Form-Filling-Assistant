@@ -1,0 +1,59 @@
+.custom-button {
+  position: relative;
+  background: linear-gradient(135deg, var(--saffron) 0%, var(--primary-purple) 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  box-shadow: 0 0 30px var(--glow-saffron);
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+}
+
+.button-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.5s;
+}
+
+.custom-button:hover .button-glow {
+  left: 100%;
+}
+
+/* Variant: Secondary */
+.custom-button.secondary {
+  background: linear-gradient(135deg, var(--green) 0%, var(--primary-blue) 100%);
+}
+
+.custom-button.secondary:hover {
+  box-shadow: 0 0 30px var(--glow-green);
+}
+
+/* Variant: Outline */
+.custom-button.outline {
+  background: transparent;
+  border: 2px solid var(--saffron);
+  color: var(--saffron);
+}
+
+.custom-button.outline:hover {
+  background: var(--saffron);
+  color: white;
+  box-shadow: 0 0 30px var(--glow-saffron);
+}

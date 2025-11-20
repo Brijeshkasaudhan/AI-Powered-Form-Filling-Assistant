@@ -1,0 +1,43 @@
+.logo-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.logo-svg {
+  filter: drop-shadow(0 0 15px var(--primary-glow));
+  overflow: visible;
+}
+
+.lotus-petal {
+  fill: none; /* Petals are outlines, not filled */
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+/* Petal Colors and Animation Timing */
+.lotus-petal.center {
+  stroke: var(--primary-glow); /* Center petal is saffron/orange */
+  animation-delay: 0s;
+}
+.lotus-petal.front {
+  stroke: #e2e8f0; /* Front side petals are white */
+  animation-delay: 0.2s;
+}
+.lotus-petal.back {
+  stroke: #138808; /* Back side petals are green */
+  stroke-width: 2.5; /* Make them slightly thinner for depth */
+  animation-delay: 0.4s;
+}
+
+/* The glow animation remains the same */
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px var(--primary-glow));
+    opacity: 0.7;
+  }
+  to {
+    filter: drop-shadow(0 0 20px var(--secondary-glow));
+    opacity: 1;
+  }
+}

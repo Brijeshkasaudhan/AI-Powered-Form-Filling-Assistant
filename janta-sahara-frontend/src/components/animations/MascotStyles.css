@@ -1,0 +1,20 @@
+.new-mascot {
+  position: fixed;
+  z-index: 10;
+  will-change: transform;
+  width: 150px; /* Give them a consistent size */
+  animation: float 8s ease-in-out infinite;
+}
+
+.mascot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Soften the edges */
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
