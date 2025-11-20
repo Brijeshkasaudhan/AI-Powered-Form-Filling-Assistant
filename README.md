@@ -1,2 +1,2 @@
-# AI-Powered-Form-Filling-Assistance
+# AI-Powered-Form-Filling-Assistant
 Major-project
